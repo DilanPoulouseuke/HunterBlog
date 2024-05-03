@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"strictNullChecks": true,
 		"baseUrl": ".",
-		"verbatimModuleSyntax": true,
+		"verbatimModuleSyntax": false,
 		"paths": {
 			"@/components/*": ["src/components/*.astro"],
 			"@/layouts/*": ["src/layouts/*.astro"],
