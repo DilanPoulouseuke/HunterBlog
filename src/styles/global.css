@@ -45,3 +45,17 @@
     }
 
 
+/* Add this CSS to your global styles or component styles */
+.star-rating {
+	display: inline-block;
+  }
+  
+  .star-rating span {
+	font-size: 24px;
+	color: #ddd;
+  }
+  
+  .star-rating .filled {
+	color: orange;
+  }
+  
