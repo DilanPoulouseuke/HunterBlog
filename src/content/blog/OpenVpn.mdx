@@ -1,0 +1,69 @@
+---
+title: "Creat your own VPN with OpenVpn"
+description: "Step by step guide on setting up OpenVpn"
+pubDate: "April 26 2024"
+heroImage: "../../assets/images/placeholder-about.jpg"
+category: "Cloud Computing"
+tags: 
+	- "Cloud"
+---
+
+1. Create an aws account on a free trial version.
+
+2. Now log into your console in [aws.amazon.com](https://aws.amazon.com/) and go to services and find EC2 under compute.
+
+3. Now under EC2 dashboard select launch instance and we have to choose an Amazon Machine Image, where we will search OpenVpn in the search bar.
+
+4. Now select the openVpn Access server. And we will be redirected to select an instance type, Where general purpose “t2.micro” is free eligible. Select that one and click launch in the bottom right.
+
+5. Now a popup will pop and ask for the key pair. Here we are going to create a new key pair, and name it whatever you want and download it. And click on launch instances.
+
+6. Now it will be showing in the instances tab. If it shows running under instances, it’s ready to use so that our virtual machine is ready and running.
+
+7. Now right click the server and click connect, it will give you some instructions on how to connect your instance.
+
+8. Copy the ssh command on the example and paste it on the cmd or terminal according to the Operating system, here in the command the downloaded key file “.pem” will be present.Now click enter and accept the agreements.
+
+```
+ssh -i "your key pairs.pem" root@ec2-{public-ip}.region.compute.amazonaws.com
+```
+
+9. Now after everything executed it will ask you to login as the user “openvpnas” rather than user “root”. So now you have to configure the same command we pasted on the cmd before with replacing “root” as “openvpnas” and click enter
+
+```
+ssh -i "your key pairs.pem" openvpnas@ec2-{public-ip}.region.compute.amazonaws.com
+```
+
+10. Now it will bring up the server ip and now we are gonna type
+
+```
+Sudo password openvpn
+
+```
+
+11. Enter new UNIX password: “Your own password” and click enter it will ask you to retype for confirmation. And that’s it, the password is set.
+
+12. Now you have to go back to aws instances and click the instance and scroll down to public ip address and copy ipv4 address. And open new tab and type in
+
+```
+https://'copied-ip-address':943/admin
+
+```
+
+```
+ Now openvpn login portal will open
+
+		Username: openvpn
+		Password: “Your created password”
+
+```
+
+And login
+
+14. Now after login we have to configure one settings, click on vpn settings under configuration and scroll to “Routing”
+
+Should client internet traffic be routed through vpn? On that click on yes and it’s done.
+
+15. Now remove the admin from the url and paste just https://'Your-ip-address':943 in your search bar and login with the credentials. Now you have to download your openvpn software according to your platforms.
+
+Where you have to connect with the login credentials. And now your Vpn works right away.
