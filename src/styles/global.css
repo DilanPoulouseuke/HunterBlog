@@ -23,8 +23,8 @@
 
 	html.dark .shiki,
 	html.dark .shiki span {
-	  color: var(--shiki-dark) !important;
-	  background-color: theme(colors.gray.900) !important;
+		color: var(--shiki-dark) !important;
+		background-color: theme(colors.gray.900) !important;
 	}
 }
 
@@ -39,33 +39,34 @@
 	box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
 }
 
-    /* Hide scrollbar for all elements */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+	display: none;
+}
 
 /* Add this CSS to your global styles or component styles */
 .star-rating {
 	display: inline-block;
-  }
-  
-  .star-rating span {
+}
+
+.star-rating span {
 	font-size: 24px;
 	color: #ddd;
-  }
-  
-  .star-rating .filled {
+}
+
+.star-rating .filled {
 	color: orange;
-  }
-  
-  .image.left, .image.right {
+}
+
+.image.left,
+.image.right {
 	max-width: 30%;
 }
 
-	.image.left img, .image.right img {
-		width: 100%;
-	}
+.image.left img,
+.image.right img {
+	width: 100%;
+}
 
 .image.left {
 	float: left;
@@ -83,6 +84,4 @@
 	margin-right: 4px;
 	width: 200px;
 	height: auto;
-  }
-  
-  
+}
