@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
 
 export default defineConfig({
-    site: 'https://blog-template-gray.vercel.app/',
+    site: 'https://hunterblog.netlify.app/',
     markdown: {
         remarkPlugins: [[remarkReadingTime, {}]], // Correct format for remarkPlugins
         drafts: true,
