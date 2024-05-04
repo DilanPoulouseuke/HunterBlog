@@ -1,11 +1,11 @@
-import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
-import sitemap from '@astrojs/sitemap'
-import tailwind from '@astrojs/tailwind'
-import remarkReadingTime from 'remark-reading-time'
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import tailwind from '@astrojs/tailwind';
+import remarkReadingTime from 'remark-reading-time'; // Ensure this import is correct
 
 export default defineConfig({
-  site: 'https://hunterblog.netlify.app/', // Write here your website url
+  site: 'https://hunterblog.netlify.app/',
   integrations: [
     mdx({
       syntaxHighlight: 'shiki',
@@ -24,11 +24,11 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
     markdownItOptions: {
-      html: true, // Enable HTML tags in Markdown
+      html: true,
     },
     shiki: {
       theme: 'material-theme-palenight',
       wrap: true,
     },
   },
-})
+});
