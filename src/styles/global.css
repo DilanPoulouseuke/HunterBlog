@@ -59,3 +59,30 @@
 	color: orange;
   }
   
+  .image.left, .image.right {
+	max-width: 30%;
+}
+
+	.image.left img, .image.right img {
+		width: 100%;
+	}
+
+.image.left {
+	float: left;
+	margin: 0 1.5em 1em 0;
+	top: 0.25em;
+}
+
+.image.right {
+	float: right;
+	margin: 0 0 1em 1.5em;
+	top: 0.25em;
+}
+.image-container {
+	float: left;
+	margin-right: 4px;
+	width: 200px;
+	height: auto;
+  }
+  
+  
