@@ -2,12 +2,12 @@ import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
-import remarkReadingTime from './src/utils/readTime.ts'
+import { remarkReadingTime } from './src/utils/readTime.ts'
 
 export default defineConfig({
     site: 'https://blog-template-gray.vercel.app/',
     markdown: {
-        remarkPlugins: [remarkReadingTime],
+        remarkPlugins: [[remarkReadingTime, {}]], // Correct format for remarkPlugins
         drafts: true,
         shikiConfig: {
             theme: 'material-theme-palenight',
