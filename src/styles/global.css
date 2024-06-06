@@ -89,12 +89,12 @@
 .twitter-tweet {
 	background-color: #1e1e1e !important; /* Dark background */
 	color: #141010 !important; /* White text */
-  }
-  
-  .twitter-tweet a {
+}
+
+.twitter-tweet a {
 	color: #1da1f2 !important; /* Link color */
-  }
-  
-  .twitter-tweet p {
+}
+
+.twitter-tweet p {
 	color: #ffffff !important; /* Text color */
-  }
+}
