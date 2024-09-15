@@ -4,5 +4,6 @@ export const CATEGORIES = [
 	'Cloud Computing',
 	'Life',
 	'Review',
-	'Short Stories'
+	'Short Stories',
+	'Character Analysis'
 ] as const
